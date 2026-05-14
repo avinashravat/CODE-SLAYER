@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODE-SLAYER — Turn your code into viral visuals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Outfit, JetBrains Mono, Orbitron for Cyberpunk, Playfair for classic/nature, Pacifico for elegant notes -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@500;800&family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,600;1,400&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics Dummy Tracking Script (Step 10 Requirement) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CODESLAYER-LIVE');
+      
+      // Initialize simulated visitor tracking stats directly in memory/storage
+      window.__codeSlayerAnalytics = {
+        visitors: 14208,
+        liveUsers: Math.floor(Math.random() * 40) + 12,
+        pageViews: 48392
+      };
+    </script>
+    <style>
+      /* Ensure clean scrollbars and basic styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
