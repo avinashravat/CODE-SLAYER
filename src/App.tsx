@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { LandingPage } from './components/LandingPage';
 import { Studio } from './components/Studio';
@@ -147,6 +148,9 @@ export default function App() {
 
       {/* Requirement #5: Contact / Help Floating Popup Module */}
       <ContactPopup />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
 
     </div>
   );
